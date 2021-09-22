@@ -78,7 +78,7 @@ getAll.onsuccess = function() {
           // clear all items in your store
           budgetObjectStore.clear();
 
-          alert('All saved pending amount has been submitted!');
+          alert('All saved pending transaction amounts have been submitted!');
         })
         .catch(err => {
           console.log(err);
