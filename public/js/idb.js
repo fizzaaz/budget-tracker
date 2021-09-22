@@ -19,7 +19,7 @@ request.onsuccess = function(event) {
     // check if app is online, if yes run uploadPizza() function to send all local db data to api
     if (navigator.onLine) {
       // we haven't created this yet, but we will soon, so let's comment it out for now
-      // uploadPizza();
+       uploadBudget();
     }
   };
   
@@ -86,3 +86,12 @@ getAll.onsuccess = function() {
     }
   };
   }
+
+  function deletePending() {
+    const transaction = db.transaction(["pending"], "readwrite");
+    const store = transaction.objectStore("pending");
+    store.clear();
+  }
+  
+  // listen for app coming back online
+window.addEventListener("online", uploadBudget);
