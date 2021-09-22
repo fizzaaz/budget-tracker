@@ -7,9 +7,10 @@ const FILES_TO_CACHE = [
     "./index.html",
     "./css/styles.css",
     "./icons/icon-192x192.png", 
-    "./manifest.json" 
+    "manifest.json" 
   ];
 
+ // install
 self.addEventListener('install', function (e) {
     e.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
@@ -19,6 +20,7 @@ self.addEventListener('install', function (e) {
   )
 })
 
+//activate and instructions to manage cache
 self.addEventListener('activate', function(e) {
   e.waitUntil(
     caches.keys().then(function(keyList) {
