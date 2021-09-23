@@ -28,7 +28,7 @@ Budget Tracker is a progressive web application that allows users to track their
 
 ✋ [GitHub Repository](https://github.com/fizzaaz/Social-Network-API)
 
-![Screen Shot](./assets/images/ss.JPG)
+![Screen Shot](./public/assets/images/ss.JPG)
 
 
 ![Screen Shot](./assets/DEMO.gif)
