@@ -36,7 +36,8 @@ function saveRecord(record) {
   
     // access the object store for `pending`
     const budgetObjectStore = transaction.objectStore('pending');
-  
+    console.log(budgetObjectStore)
+    console.log("This is the record " + {record})
     // add record to your store with add method
     budgetObjectStore.add(record);
   }
@@ -58,7 +59,7 @@ function saveRecord(record) {
 getAll.onsuccess = function() {
     // if there was data in indexedDb's store, let's send it to the api server
     if (getAll.result.length > 0) {
-      fetch('/api/transaction', {
+      fetch('/api/transaction/bulk', {
         method: 'POST',
         body: JSON.stringify(getAll.result),
         headers: {
