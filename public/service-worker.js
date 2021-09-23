@@ -52,6 +52,7 @@ self.addEventListener('activate', function (e) {
 
 
 self.addEventListener('fetch', function (e) {
+  console.log("i am on fetch")
   console.log('fetch request : ' + e.request.url)
   e.respondWith(
     caches.match(e.request).then(function (request) {
