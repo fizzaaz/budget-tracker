@@ -28,11 +28,11 @@ Budget Tracker is a progressive web application that allows users to track their
 
 ✋ [GitHub Repository](https://github.com/fizzaaz/Social-Network-API)
 
+
+✋ [Deployed App](https://pwa-budgetracker.herokuapp.com/)
+
+
 ![Screen Shot](./public/assets/images/ss.JPG)
-
-
-![Screen Shot](./assets/DEMO.gif)
-
 
 ## ✋User Requirements
 
@@ -62,7 +62,7 @@ Run the following command at the root of your project :
   
 `npm start`     
 
-To access the app after starting the server, go to http://localhost:3000 in your browser.
+To access the app after starting the server, go to http://localhost:3000 in your browser or go to https://pwa-budgetracker.herokuapp.com/.
 
 ## 💾Installation
 
