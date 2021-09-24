@@ -26,7 +26,7 @@
 🔍Giving users a fast and easy way to track their money is important, but allowing them to access that information at any time is even more important. Having offline functionality is paramount to the success of an application that handles users’ financial information.
 Budget Tracker is a progressive web application that allows users to track their budgets by adding expenses and deposits to their budget through the "Add/Subtract Funds" buttons. They are able to add a transaction with or without a connection. When a user enters a transaction while offline, these transactions are stored in the indexedDB, and transferred to the database when the user comes back online.
 
-✋ [GitHub Repository](https://github.com/fizzaaz/Social-Network-API)
+✋ [GitHub Repository](https://github.com/fizzaaz/budget-tracker)
 
 
 ✋ [Deployed App](https://pwa-budgetracker.herokuapp.com/)
